@@ -1,0 +1,11 @@
+--- lirc-0.8.5/daemons/irrecord.c.orig	2011-03-19 19:04:49.460260064 +0100
++++ lirc-0.8.5/daemons/irrecord.c	2011-03-19 19:04:58.880163128 +0100
+@@ -107,7 +107,7 @@
+ 
+ /* the longest signal I've seen up to now was 48-bit signal with header */
+ 
+-#define MAX_SIGNALS 200
++#define MAX_SIGNALS 300
+ 
+ lirc_t signals[MAX_SIGNALS];
+ 

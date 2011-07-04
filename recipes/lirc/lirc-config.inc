@@ -2,7 +2,7 @@ EXTRA_OECONF = "--with-kerneldir=${STAGING_KERNEL_DIR} ${DRIVER}"
 
 PARALLEL_MAKE = ""
 
-DRIVER ?= "--with-driver=serial --with-driver=mceusb"
+DRIVER ?= "--with-driver=serial --with-driver=mceusb --with-driver=iguanaIR"
 # fails to build at the moment, re-enable later
 #DRIVER_collie = "--with-driver=sa1100"
 DRIVER_h3600 = "--with-driver=sa1100"

@@ -17,6 +17,7 @@ RDEPENDS_lirc-nslu2example = "lirc lirc-exec"
 RRECOMMENDS_lirc = "lirc-exec"
 
 SRC_URI = "${SOURCEFORGE_MIRROR}/lirc/lirc-${PV}.tar.gz \
+           file://irrecord.patch;patch=1 \
            file://lircd.init file://lircmd.init file://lircexec.init"
 SRC_URI_append_nslu2 = " file://lircd.conf_nslu2 file://lircrc_nslu2"
 
