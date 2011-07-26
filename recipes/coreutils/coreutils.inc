@@ -1,8 +1,9 @@
 DESCRIPTION = "A collection of core GNU utilities."
 HOMEPAGE = "http://www.gnu.org/software/coreutils"
-LICENSE = "GPL"
+LICENSE = "GPLv3"
 SECTION = "base"
-RREPLACES = "textutils shellutils fileutils"
-RPROVIDES = "textutils shellutils fileutils"
+RREPLACES_${PN} = "textutils shellutils fileutils"
+RPROVIDES_${PN} = "textutils shellutils fileutils"
 
+INC_PR = "r6"
 inherit autotools
