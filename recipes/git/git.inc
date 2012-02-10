@@ -2,8 +2,7 @@ DESCRIPTION = "The git revision control system used by the Linux kernel develope
 SECTION = "console/utils"
 LICENSE = "GPLv2"
 
-SRC_URI = "http://www.kernel.org/pub/software/scm/git/git-${PV}.tar.bz2;name=src"
-
+SRC_URI = "http://git-core.googlecode.com/files/git-${PV}.tar.gz"
 S = "${WORKDIR}/git-${PV}"
 
 inherit autotools
