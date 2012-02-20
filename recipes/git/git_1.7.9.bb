@@ -4,7 +4,7 @@ SRC_URI += "file://git-less-hardlinks.diff;patch=1"
 
 SRC_URI[src.md5sum] = "d94314eb49622a945b22595b36b7fc47"
 SRC_URI[src.sha256sum] = "dd9dfcf1da59f09c4b66b53836b56fcb2208d0be9edf1f8b9079c7e980435086"
-PR = "r1"
+PR = "r2"
 
 EXTRA_OECONF += "ac_cv_snprintf_returns_bogus=no ac_cv_c_c99_format=yes"
 EXTRA_OECONF += "NO_TCLTK=yes"
@@ -48,7 +48,7 @@ FILES_${PN}-perltools += " \
 	${libexecdir}/git-core/git-relink \
 	${libexecdir}/git-core/git-send-email \
 	${libexecdir}/git-core/git-svn \
-	${datadir}/perl5 \
+	${libdir}/perl5 \
 "
 RDEPENDS_${PN}-perltools = "${PN} perl perl-module-file-path findutils"
 
