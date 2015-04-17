@@ -28,7 +28,7 @@ inherit autotools gettext
 
 S = "${WORKDIR}/glib-${PV}"
 
-EXTRA_OECONF = "--disable-debug "
+EXTRA_OECONF = "--disable-debug --with-libiconv=gnu"
 
 # Add and entry for your favourite arch if your (g)libc has a sane printf
 EXTRA_OECONF_append_glibc_arm = "  --enable-included-printf=no "
